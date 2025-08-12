@@ -1,14 +1,13 @@
-// @flow strict
+"use client"
+
 import { educations } from "@/utils/data/educations";
 import Image from "next/image";
 import { BsPersonWorkspace } from "react-icons/bs";
-import lottieFile from '../../../assets/lottie/study.json';
-import AnimationLottie from "../../helper/animation-lottie";
 import GlowCard from "../../helper/glow-card";
 
 function Education() {
   return (
-    <div id="education" className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
+    <div id="education" className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]" suppressHydrationWarning>
       <Image
         src="/section.svg"
         alt="Hero"
@@ -36,7 +35,9 @@ function Education() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
           <div className="flex justify-center items-start">
             <div className="w-3/4 h-3/4">
-              <AnimationLottie animationPath={lottieFile} />
+              <div className="w-full h-64 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center shadow-lg">
+                <BsPersonWorkspace size={80} className="text-white" />
+              </div>
             </div>
           </div>
 

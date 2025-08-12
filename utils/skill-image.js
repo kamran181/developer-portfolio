@@ -25,7 +25,7 @@ import flutter from '../app/assets/svg/skills/flutter.svg';
 import gcp from '../app/assets/svg/skills/gcp.svg';
 import gimp from '../app/assets/svg/skills/gimp.svg';
 import git from '../app/assets/svg/skills/git.svg';
-import go from '../app/assets/svg/skills/go.svg';
+
 import graphql from '../app/assets/svg/skills/graphql.svg';
 import haxe from '../app/assets/svg/skills/haxe.svg';
 import html from '../app/assets/svg/skills/html.svg';
@@ -60,7 +60,7 @@ import react from '../app/assets/svg/skills/react.svg';
 import ruby from '../app/assets/svg/skills/ruby.svg';
 import selenium from '../app/assets/svg/skills/selenium.svg';
 import sketch from '../app/assets/svg/skills/sketch.svg';
-import strapi from '../app/assets/svg/skills/strapi.svg';
+
 import svelte from '../app/assets/svg/skills/svelte.svg';
 import swift from '../app/assets/svg/skills/swift.svg';
 import tailwind from '../app/assets/svg/skills/tailwind.svg';
@@ -82,7 +82,7 @@ import kubernetes from '../app/assets/svg/skills/kubernetes.svg'
 import linux from '../app/assets/svg/skills/linux.svg'
 import sqlalchemy from '../app/assets/svg/skills/sqlalchemy.svg'
 import fastapi from '../app/assets/svg/skills/fastapi.svg'
-
+import redis from '../app/assets/svg/skills/redis.svg';
 
 
 export const skillsImage = (skill) => {
@@ -150,8 +150,7 @@ export const skillsImage = (skill) => {
       return csharp;
     case 'dart':
       return dart;
-    case 'go':
-      return go;
+
     case 'java':
       return java;
     case 'kotlin':
@@ -202,8 +201,7 @@ export const skillsImage = (skill) => {
       return pytorch;
     case 'selenium':
       return selenium;
-    case 'strapi':
-      return strapi;
+
     case 'tensorflow':
       return tensorflow;
     case 'webix':
@@ -254,7 +252,9 @@ export const skillsImage = (skill) => {
       return sqlalchemy;
     case 'fastapi':
       return fastapi;
+    case 'redis':
+      return redis;
     default:
-      break;
+      return null;
   }
 }
